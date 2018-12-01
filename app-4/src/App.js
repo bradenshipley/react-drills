@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Login from "./Login.js";
-import logo from "./logo.svg";
 import "./App.css";
 
 class App extends Component {
@@ -8,7 +7,7 @@ class App extends Component {
     super(props);
     this.state = {
       username: "",
-      pass: ""
+      password: ""
     };
   }
   render() {

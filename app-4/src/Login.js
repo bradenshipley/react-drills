@@ -5,7 +5,7 @@ import "./App.css";
 class Login extends Component {
   handlePassChange(val) {
     this.setState({
-      pass: val
+      password: val
     });
   }
   handleUsernameChange(val) {
@@ -14,8 +14,8 @@ class Login extends Component {
     });
   }
   submit(){
-    console.log(   `Username: ${this.state.username} Password: ${password}` );
-    alert(   `Username: ${this.state.username} Password: ${password}` )
+    console.log(   `Username: ${this.state.username} Password: ${this.state.password}` );
+    alert(   `Username: ${this.state.username} Password: ${this.state.password}` )
   }
   render() {
     return (
@@ -30,7 +30,8 @@ class Login extends Component {
           placeholder="Password goes here"
           onChange={e => this.handlePassChange(e.target.value)}
         />
-        <button className='submitButton' onClick={e=>this.submit()}
+        <button className='submitButton' onClick={e=>this.submit()}>Click Me!
+        </button>
       </div>
     );
   }

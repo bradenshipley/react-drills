@@ -16,6 +16,10 @@ class App extends Component {
   }
   render() {
     return (
+      //a single input box which takes in an onChange event.
+      //handleChange sets the e.target.value to the state of userInput
+      //a single h3 which shows the current state of userInput
+      //
       <div>
         <input
           className="textbox"

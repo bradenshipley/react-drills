@@ -13,6 +13,7 @@ class App extends Component {
   render() {
     return (
       //map through the arr in state using .map(). Only rendering what is required by the project.
+      //no event listener needed since this is just rendering the current state of arr as individual elements
       <ul className="arrayList">
         {this.state.arr.map((element, index) => (
           <li key={index}>{element}</li>
